@@ -1,0 +1,19 @@
+<?php
+// DAdos do SGBD MySQL para a conexão
+$servidor = 'localhost';
+$usuario = "root";
+$senha = "";
+$banco = "teste_mysqli";
+
+//Criando a conexão
+$conexao = new mysqli($servidor, $usuario, $senha, $banco);
+
+//Chegando a conexão
+if ($conexao->connect_error) {
+    die("Conexão falhou: " . $conn->connect_error);
+}
+echo "Conectado com sucesso";
+
+
+
+?>
